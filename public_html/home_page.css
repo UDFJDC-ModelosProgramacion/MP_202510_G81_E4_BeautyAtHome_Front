@@ -1,0 +1,114 @@
+body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background: linear-gradient(#fffafc, #ffeef2);
+        color: #333;
+        overflow-x: hidden;
+      }
+      header {
+        text-align: center;
+        background: #f397b6;
+        color: white;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+      }
+      nav a,
+      nav button {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+      }
+      .hero {
+        position: relative;
+        text-align: center;
+        padding: 5rem 2rem;
+        background: url('https://plus.unsplash.com/premium_photo-1684407616442-8d5a1b7c978e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+          center/cover no-repeat;
+        color: white;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(244, 143, 177, 0.6);
+      }
+      .hero h2,
+      .hero p,
+      .hero button {
+        position: relative;
+        z-index: 1;
+        margin: 1rem 0;
+      }
+      .hero h2 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hero p {
+        font-size: 1.4rem;
+        max-width: 600px;
+        margin: 1rem auto;
+      }
+      .btn {
+        background: #ffffff;
+        color: #f06292;
+        padding: 0.75rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+      }
+      .btn:hover {
+        background: #ffeef2;
+      }
+      .features {
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .features h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+      .features ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+      }
+      .features li {
+        padding: 3rem 2rem 1.5rem 2rem;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        flex: 1 1 200px;
+        max-width: 250px;
+      }
+      footer {
+        background: #f8bbd0;
+        text-align: center;
+        padding: 1rem;
+        color: #333;
+        margin-top: 2rem;
+      }

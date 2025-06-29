@@ -1,0 +1,83 @@
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: linear-gradient(#fffafc, #ffeef2);
+            color: #333;
+        }
+        header {
+            background: #f48fb1;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 4rem 2rem;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .btn {
+        background: #ffffff;
+        color: #f06292;
+        padding: 0.75rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        }
+        .professionals {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .professional-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .professional-card:hover {
+            transform: translateY(-5px);
+        }
+        .professional-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .professional-card h3 {
+            margin: 1rem 0 0.5rem;
+        }
+        .professional-card p {
+            padding: 0 1rem 1rem;
+            font-size: 0.95rem;
+        }
+        footer {
+            background: #f8bbd0;
+            text-align: center;
+            padding: 1rem;
+            color: #333;
+            margin-top: 2rem;
+        }
