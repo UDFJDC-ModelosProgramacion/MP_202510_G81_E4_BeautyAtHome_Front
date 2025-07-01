@@ -4,6 +4,7 @@
             background: linear-gradient(#fffafc, #ffeef2);
             color: #333;
         }
+
         header {
             background: #f48fb1;
             color: white;
@@ -11,8 +12,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         nav ul {
             list-style: none;
             margin: 0;
@@ -20,18 +22,26 @@
             display: flex;
             gap: 1rem;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
+
         main {
-            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             text-align: center;
-            margin-bottom: 2rem;
         }
+
         .btn {
         background: #ffffff;
         color: #f06292;
@@ -46,38 +56,25 @@
         font-family: inherit;
         font-size: inherit;
         }
-        .professionals {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .professional-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-        .professional-card:hover {
-            transform: translateY(-5px);
-            transform: scale(1.02);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .professional-card img {
+
+        table {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            border-collapse: collapse;
+            margin-top: 1rem;
         }
-        .professional-card h3 {
-            margin: 1rem 0 0.5rem;
+
+        th,
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
         }
-        .professional-card p {
-            padding: 0 1rem 1rem;
-            font-size: 0.95rem;
+
+        th {
+            background: #f8bbd0;
+            color: #333;
         }
+
         footer {
             background: #f8bbd0;
             text-align: center;

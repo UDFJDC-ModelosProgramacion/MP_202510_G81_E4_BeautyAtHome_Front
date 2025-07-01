@@ -44,6 +44,10 @@ async function getProfessionals() {
             card.appendChild(name);
             card.appendChild(summary);
 
+            card.addEventListener("click", function(){
+                window.location.href = 'professional_profile.html';
+            })
+
             container.appendChild(card);
         }
 

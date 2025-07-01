@@ -11,7 +11,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         nav ul {
             list-style: none;
@@ -26,11 +26,12 @@
             font-weight: bold;
         }
         main {
-            padding: 4rem 2rem;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
         }
         .btn {
         background: #ffffff;
@@ -46,37 +47,37 @@
         font-family: inherit;
         font-size: inherit;
         }
-        .professionals {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .professional-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
+        h2 {
             text-align: center;
-            transition: transform 0.3s;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input,
+        select,
+        textarea {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            background: #f06292;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 30px;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: background 0.3s;
         }
-        .professional-card:hover {
-            transform: translateY(-5px);
-            transform: scale(1.02);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .professional-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        .professional-card h3 {
-            margin: 1rem 0 0.5rem;
-        }
-        .professional-card p {
-            padding: 0 1rem 1rem;
-            font-size: 0.95rem;
+        button:hover {
+            background: #ec407a;
         }
         footer {
             background: #f8bbd0;

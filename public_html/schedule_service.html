@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautyAtHome - Agendar Servicio</title>
+    <link rel = "stylesheet" href = "schedule_service.css">
+</head>
+<body>
+    <header>
+        <h1>BeautyAtHome</h1>
+        <nav>
+            <ul>
+                <button id = "btnHomePage" class="btn">Inicio</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Agendar un Servicio</h2>
+        <form>
+            <label for="professional">Selecciona el Profesional</label>
+            <select id="professional" name="professional">
+            </select>
+
+            <label for="service">Selecciona el Servicio</label>
+            <select id="service" name="service">
+            </select>
+
+            <label for="coverage">Área de Cobertura</label>
+            <select id="coverage" name="coverage">
+            </select>
+
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Hora</label>
+            <input type="time" id="time" name="time">
+
+            <label for="notes">Notas Adicionales</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Indica detalles o preferencias..."></textarea>
+
+            <button type="submit">Agendar Cita</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 BeautyAtHome. Todos los derechos reservados.</p>
+    </footer>
+    <script src = "schedule_service.js"></script>
+</body>
+</html>
