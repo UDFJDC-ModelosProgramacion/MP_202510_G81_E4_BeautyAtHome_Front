@@ -8,8 +8,8 @@ getProfessionals();
 
 async function getProfessionals() {
     try{
-        const response = await fetch("http://localhost:8080/professionals", {
-            mehtod: 'GET',
+        const response = await fetch("http://localhost:8080/api/professionals", {
+            method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -28,32 +28,32 @@ async function getProfessionals() {
 
         for(const professionalsData of professionals){
             const card = document.createElement("div");
-            card.className = "professionalCard";
+            card.className = "professional-card";
 
             const image = document.createElement("img");
-            image.src = professionalsData.imagenUrl || "https://via.placeholder.com/300x200?text=Sin+Imagen";
-            image.alt = professionalsData.nombre;
+            image.src = professionalsData.photoUrl;
+            image.alt = professionalsData.name;
 
             const name = document.createElement("h3");
-            name.textContent = professionalsData.nombre;
+            name.textContent = professionalsData.name;
 
-            const description = document.createElement("p");
-            description.textContent = professionalsData.description;
+            const summary = document.createElement("p");
+            summary.textContent = professionalsData.summary;
 
             card.appendChild(image);
             card.appendChild(name);
-            card.appendChild(description);
+            card.appendChild(summary);
 
-            contenedor.appendChild(card);
+            container.appendChild(card);
         }
 
         // Si no hay profesionales, mostrar mensaje
-        if (profesionales.length === 0) {
-            contenedor.innerHTML = "<p>No hay profesionales disponibles por ahora.</p>";
+        if (professionals.length === 0) {
+            container.innerHTML = "<p>No hay profesionales disponibles por ahora.</p>";
         }
     } catch (error) {
         console.error("Error al cargar los profesionales:", error);
-        const contenedor = document.getElementById("profesionales-container");
-        contenedor.innerHTML = "<p>Ocurrió un error al cargar los profesionales.</p>";
+        const container = document.getElementById("professionalsContainer");
+        container.innerHTML = "<p>Ocurrió un error al cargar los profesionales.</p>";
     }
 }
