@@ -1,0 +1,23 @@
+.service {
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+
